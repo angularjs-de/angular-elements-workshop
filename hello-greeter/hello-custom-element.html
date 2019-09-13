@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="hello-greeter.js"></script>
+
+
+
+</head>
+
+<body>
+  <hello-greeter name="Workshop"></hello-greeter>
+</body>
+<script>
+  let hello = document.querySelector('hello-greeter');
+  hello.addEventListener('name-changed', (event) => console.log(event));
+  setTimeout(() => {
+    hello.name = "everyone"
+  }, 2000)
+</script>
+
+</html>

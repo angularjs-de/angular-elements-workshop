@@ -1,0 +1,13 @@
+
+<h1>Button Chooser Demo</h1>
+<form novalidate (ngSubmit)="register(form.value)" #form="ngForm">
+  <label>Welchen Library-Ansatz bevorzugen Sie?</label>
+  <ch-button-chooser [choices]="choices"
+    name="answer"[(ngModel)]="answer">
+  </ch-button-chooser>
+</form>
+
+<div>Antwort: {{answer}}</div>
+
+
+
