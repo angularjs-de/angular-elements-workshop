@@ -5,7 +5,7 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ButtonChooserModule } from 'ch-button-chooser';
 
-import '../assets/button-chooser';
+// import '../assets/button-chooser';
 
 
 @NgModule({
@@ -16,9 +16,9 @@ import '../assets/button-chooser';
     ButtonChooserModule
   ],
   providers: [],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ],
+   schemas: [
+     CUSTOM_ELEMENTS_SCHEMA
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

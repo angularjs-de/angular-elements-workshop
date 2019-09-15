@@ -67,7 +67,8 @@
               "projects/button-chooser-demo/src/styles.css"
             ],
             "scripts": [
-              "node_modules/document-register-element/build/document-register-element.js"
+              "node_modules/document-register-element/build/document-register-element.js",
+              "projects/button-chooser-demo/src/assets/button-chooser.js"
             ]
           },
           "configurations": {
