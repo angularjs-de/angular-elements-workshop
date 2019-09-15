@@ -25,7 +25,7 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 })
 export class ButtonChooserComponent implements ControlValueAccessor, OnChanges  {
 
-  constructor() {
+  constructor(private cd: ChangeDetectorRef) {
   }
 
   @Input() choices: string[] = [];
@@ -41,6 +41,7 @@ export class ButtonChooserComponent implements ControlValueAccessor, OnChanges  
     if (changes.choicesString) {
       this.choices = changes.choicesString.currentValue.split(',');
     }
+    this.cd.detectChanges();
   }
 
   public writeValue(value: any) {
@@ -60,6 +61,7 @@ export class ButtonChooserComponent implements ControlValueAccessor, OnChanges  
     this.propagateChange(this.value);
     this.propagateTouched();
     this.valueChanged.emit(this.value);
+    this.cd.detectChanges();
     return false;
   }
 }
