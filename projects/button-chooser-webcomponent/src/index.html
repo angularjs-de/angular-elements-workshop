@@ -7,12 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .blue-theme {
+      --button-chooser-background-color: #32ade6;
+      --button-chooser-background-color-active: blue;
+    }
+  </style>
 </head>
 <body>
 <my-first-angular-element></my-first-angular-element>
 
 <ch-button-chooser-component id="first-chooser" choices-string="yes, no"></ch-button-chooser-component>
-<ch-button-chooser-component id="second-chooser"></ch-button-chooser-component>
+<div class="blue-theme">
+  <ch-button-chooser-component id="second-chooser"></ch-button-chooser-component>
+</div>
 
 </body>
 <script>

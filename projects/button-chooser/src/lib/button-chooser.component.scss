@@ -1,15 +1,16 @@
 
+
 .button-chooser {
   width: 100%;
   display: flex;
 
   &__button {
-    background: #0fc50f;
+    background: var(--button-chooser-background-color, #0fc50f);
     color: white;
     width: 95%;
     margin: 10px 10px 0px 0px;
     &--active {
-      background: #0b960b;
+      background: var(--button-chooser-background-color-active, #0b960b);
     }
   }
   &__column {
